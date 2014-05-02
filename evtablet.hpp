@@ -66,6 +66,12 @@ struct Tablet {
     return true;
   }
 
+  void close()
+  {
+    dev.reset();
+    good = false;
+  }
+
   bool process_events()
   {
     input_event ev;
