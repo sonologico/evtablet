@@ -1,5 +1,5 @@
 # Evtablet
-Single header libevdev wrapper for getting wacom tablet input in a simple way under linux.
+Single header libevdev wrapper for getting wacom tablet input in a simple way under linux. It has been useful to me in some projects and a colleague manifested interest in this simplified wrapper. I figured it might be useful to others. If you find anything wrong or need support for something, feel free to get in touch or contribute.
 
 ## Build
 It's a single header, so just include evtablet.hpp and both link with libevdev and add it to the include path.
