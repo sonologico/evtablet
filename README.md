@@ -44,7 +44,7 @@ More detail can be obtained by calling the member function:
   libevdev_absinfo *query_properties(int axis)
 ```
 Possible values for axis are ABS_X, ABS_Y, ABS_PRESSURE and ABS_DISTANCE. The pointer-to-libevdev_absinfo returned can be used to get access the fields value, minimum, maximum, fuzz, resolution and flat.
-To start using a device, call open with the correct /dev/input path. It returns true in case the device was opened correctly and false if not. A flag 'good' is also set with this value (this flag is also set to false in case of error processing events). Opening new devices closes the old one, even if the operation. To close intetionally, call close.
+To start using a device, call open with the correct /dev/input path. It returns true in case the device was opened correctly and false if not. A flag 'good' is also set with this value (this flag is also set to false in case of error processing events). Opening new devices closes the old one, even if the operation fails. To close intentionally, call close.
 ```c++
   bool open(const char *path);
   void close();
